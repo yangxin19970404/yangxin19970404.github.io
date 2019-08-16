@@ -1,4 +1,4 @@
-name:               "YangXin--兄弟会"
+name:               "YangXin--兄弟会-"
 description:        "The harder you work, the luckier you will be"
 
 url:                ""
@@ -13,7 +13,7 @@ facebook:           "jhondoe"
 
 disqus_shortname:   "thinker3197"
 
-background:         "http://img0.imgtn.bdimg.com/it/u=2277332930,2269896308&fm=26&gp=0.jpg"
+background:         "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3016321503,1563649456&fm=26&gp=0.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
