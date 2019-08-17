@@ -10,7 +10,10 @@ layout: default
         <a href="{{ nav.href }}">{{ nav.name }}<span> &nbsp;/&nbsp; </span></a> {% endfor %}
     </nav>
 </header>
-<div class="content">
+	<div  class ="img1">
+	      <img src="http://img5.imgtn.bdimg.com/it/u=3154502305,80407948&fm=26&gp=0.jpg"/>
+    	</div>
+    <div class="content">
     {% if site.posts.size == 0 %}
     <h2>No post found</h2> {% else %} {% for post in paginator.posts %}
     <div class="post-list">
@@ -24,9 +27,7 @@ layout: default
         </div>
 		
     </div>
-	<div  class ="img1">
-	      <img src="http://img5.imgtn.bdimg.com/it/u=3154502305,80407948&fm=26&gp=0.jpg"/>
-    	</div>
+
     {% endfor %} {% if paginator.total_pages > 1 %}
     <div class="pages">
       {% if paginator.previous_page %}
