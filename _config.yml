@@ -23,8 +23,7 @@ markdown:           kramdown
 nav:
   - name:           "MyGithub"
     href:           "https://github.com/yangxin19970404"
-  - name:           "Download"
-    href:           "/releases"
+
 
 sass:
   style:            :compressed
