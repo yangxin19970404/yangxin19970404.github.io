@@ -17,8 +17,9 @@ author:       "yangxin"
 
   ### 删除分支的几种方法
 
-**1. git  branch  -d   本地分支  
-2. git  branch  -dr  删除远程分支  （只能删除本地库和远程库分支之间的追踪关系）  
-3. git   push   origin –delete  远程分支     （彻底删除）  
-4. git  push   origin       :  远程分支**  
+*1. git  branch  -d   本地分支
+
+2. git  branch  -dr  删除远程分支  （只能删除本地库和远程库分支之间的追踪关系）
+3. git   push   origin –delete  远程分支     （彻底删除）
+4. git  push   origin       :  远程分支*  
 
