@@ -1,19 +1,18 @@
 ---
 layout: default
 ---
+{%- include header.html -%}
 
-{% include header.html %}
-
-<div class="content post">
-	<div  class ="img">
-	      <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566626880&di=c0ab8cb331415ac7dc925ae1f47c1606&imgtype=jpg&er=1&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20170615%2F948d7f08367f4d57888dd5da50e606bc.jpg"/>
-	</div>
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-date">
-    <time>{{ page.date | date_to_string }}</time>
-  </div>
-  {{ content }}
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
 </div>
-{% if site.disqus_shortname %}
-  {% include disqus_comments.html %}
-{% endif %}
