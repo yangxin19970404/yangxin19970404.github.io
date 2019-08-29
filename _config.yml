@@ -1,44 +1,47 @@
-# Site/SEO settings
-email: 
-permalink: /:year/:month/:day/:title/
-google_analytics: 
+name:               "YangXin--兄弟会-"
+description:        "先谋生，再谋爱！"
 
-title: YangXin
-description: 
-url: ""
-baseurl: ""
-twitter_username: 
-default_img: 
+url:                "https://yangxin19970404.github.io"
+email:              "yangxin19970404@163.com"
+gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
 
-# Profile settings
-name: 
-profile_img: 
-profile: 
-social:
-  github: 
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - octopress-autoprefixer
-compress_html:
-  clippings: all
-  comments: all
-  startings: [html, head, body]
-exclude:
-  - _screenshots
-  - .DS_Store
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.txt
-  - README.md
 
-# Pagination
-paginate: 5
-paginate_path: "/blog/page-:num"
 
-# Sass
+
+
+disqus_shortname:   "yangxin19970404"
+
+background:         "https://p3a.pstatp.com/weili/l/189489516171755872.jpg"
+
+paginate:           5
+paginate_path:      "/page:num/"
+
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+
+markdown:           kramdown
+
+nav:
+  - name:           "MyGithub"
+    href:           "https://github.com/yangxin19970404"
+
+
 sass:
-  style: compressed
+  style:            :compressed
+
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+
