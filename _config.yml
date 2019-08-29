@@ -1,56 +1,44 @@
-logo: # add logo name
-title: Bef - Enjoy Freedom
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "/bef" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Site/SEO settings
+email: 
+permalink: /:year/:month/:day/:title/
+google_analytics: 
 
-# Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # add banner title
-banner-desc: # add banner description
+title: Trophy
+description: 
+url: ""
+baseurl: ""
+twitter_username: 
+default_img: 
 
-# Author settings
-author-pic: face.jpg # your photo
-author-name: # your name
-about-author: # about author
-email: your-email@domain.com # your email
-phone: (496)-169-6557 # your pnone number
-website: https://dwayne.example.com # you website
-
-# Social link
-google_url:    # add url link
-twitter_url:   # add url link
-instagram_url: # add url link
-pinterest_url: # add url link
-dribbble_url:  # add url link
-facebook_url:  # add url link
-
-# Disqus
-discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
-
-# Newsletter
-mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
-
-# Tracker
-analytics:
-
-# Paginate
-paginate: 12
-paginate_path: /page:num/
+# Profile settings
+name: 
+profile_img: 
+profile: 
+social:
+  github: 
 
 # Build settings
 markdown: kramdown
-plugins_dir:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - octopress-autoprefixer
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+exclude:
+  - _screenshots
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
 
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
+# Pagination
+paginate: 5
+paginate_path: "/blog/page-:num"
 
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+# Sass
+sass:
+  style: compressed
