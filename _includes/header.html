@@ -1,15 +1,8 @@
-{%- comment -%}
-  Include vars:
-  scrolly_nav
-{%- endcomment -%}
 
-<!-- Header -->
-<div id="header">
-  <div class="top">
-    {%- include logo.html -%}
-    {%- include nav.html section_items=include.scrolly_nav -%}
-  </div>
-  <div class="bottom">
-    {%- include social_icons.html -%}
-  </div>
-</div>
+<header class="main_header">
+  <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+  <nav class="main_menu">
+    <a href="{{site.baseurl}}/about/">About</a>
+    <a href="{{site.baseurl}}/contact/">Contact</a>
+  </nav>
+</header> <!-- End Section Header -->
