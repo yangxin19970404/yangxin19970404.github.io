@@ -4,8 +4,22 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="jQuery选择器, Hexo">
+    <meta name="description" content="JQuery强大的选择器
+基本选择器
+
+
+标签选择器
+$(“p”).css(“color”,”red”);
+
+
+
+id选择器
+$(“#er”).css(“color”,”red”);
+
+
+class选择器
+$(“.si”).css(“col">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +27,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | Hexo</title>
+    <title>jQuery选择器 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -284,13 +298,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        jQuery选择器
                     </div>
                 </div>
             </div>
@@ -413,7 +427,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-09-29
+                    2019-10-08
                 </div>
 
                 
@@ -429,19 +443,255 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="JQuery强大的选择器"><a href="#JQuery强大的选择器" class="headerlink" title="JQuery强大的选择器"></a>JQuery强大的选择器</h2><hr>
+<h4 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a><strong>基本选择器</strong></h4><table>
+<thead>
+<tr>
+<th align="center">标签选择器</th>
+<th>$(“p”).css(“color”,”red”);</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">id选择器</td>
+<td>$(“#er”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">class选择器</td>
+<td>$(“.si”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">选择器1，选择器2。。。</td>
+<td>$(“#er,.si”).css(“color”,”red”);</td>
+</tr>
+</tbody></table>
+<h4 id="层级选择器"><a href="#层级选择器" class="headerlink" title="层级选择器"></a><strong>层级选择器</strong></h4><table>
+<thead>
+<tr>
+<th align="center">后代选择器</th>
+<th>$(“#d2 p”).css(“color”,”red”);  p1p2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">子代选择器</td>
+<td>$(“#d2&gt;p”).css(“color”,”red”);  p1</td>
+</tr>
+<tr>
+<td align="center">相邻的兄弟</td>
+<td>$(“#d2+p”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">后面的所有兄弟</td>
+<td>$(“#d2~p”).css(“color”,”red”);</td>
+</tr>
+</tbody></table>
+<h4 id="基本的筛选选择器"><a href="#基本的筛选选择器" class="headerlink" title="基本的筛选选择器"></a><strong>基本的筛选选择器</strong></h4><table>
+<thead>
+<tr>
+<th align="center">第一个元素</th>
+<th>$(“p:first”).css(“color”,”red”);</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">最后一个元素</td>
+<td>$(“p:last”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">not过滤</td>
+<td>$(“p:not(.si)”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">下标为奇数的元素</td>
+<td>$(“p:odd”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">下标为偶数的元素</td>
+<td>$(“p:even”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">下标相等的</td>
+<td>$(“p:eq(2)”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">大于下标的</td>
+<td>$(“p:gt(2)”).css(“color”,”red”);</td>
+</tr>
+<tr>
+<td align="center">小于小标的</td>
+<td>$(“p:lt(2)”).css(“color”,”red”);</td>
+</tr>
+</tbody></table>
+<h4 id="表单选择器"><a href="#表单选择器" class="headerlink" title="表单选择器"></a><strong>表单选择器</strong></h4><table>
+<thead>
+<tr>
+<th align="center">:input</th>
+<th>选取所有输入框</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">:text</td>
+<td>选取所有的文本框</td>
+</tr>
+<tr>
+<td align="center">: password</td>
+<td>选取所有的密码框</td>
+</tr>
+<tr>
+<td align="center">: radio</td>
+<td>选取所有的单选按钮</td>
+</tr>
+<tr>
+<td align="center">: checkbox</td>
+<td>选取所有的复选框</td>
+</tr>
+<tr>
+<td align="center">: submit</td>
+<td>选取所有的提交按钮</td>
+</tr>
+<tr>
+<td align="center">: reset</td>
+<td>选取所有的重置按钮</td>
+</tr>
+<tr>
+<td align="center">: button</td>
+<td>选取所有的按钮</td>
+</tr>
+<tr>
+<td align="center">: file</td>
+<td>选取所有的文件域</td>
+</tr>
+<tr>
+<td align="center">: hidden</td>
+<td>选取所有的隐藏域</td>
+</tr>
+</tbody></table>
+<p><img src="/image/1.png" alt></p>
+<h2 id="属性函数，样式函数"><a href="#属性函数，样式函数" class="headerlink" title="属性函数，样式函数"></a>属性函数，样式函数</h2><table>
+<thead>
+<tr>
+<th align="center">$(“img”).attr(“title”);</th>
+<th><strong>得到</strong>img的title属性值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“img”).attr(“title”,”xxx”);</td>
+<td><strong>设置</strong>img的title属性值</td>
+</tr>
+<tr>
+<td align="center">$(“img”).removeAttr(“title”);</td>
+<td><strong>移除</strong>img的title属性值</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">$(“input”).val();</th>
+<th><strong>得到</strong>input框的值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“input”).val(“xxxx”);</td>
+<td><strong>设置</strong>input框的值</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">$(“div”).text();</th>
+<th><strong>得到</strong>div里面的纯文本内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“div”).text(“xxxx”);</td>
+<td><strong>设置</strong>div里面的纯文本内容</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">$(“div”).html();</th>
+<th><strong>得到</strong>div里面所有内容（html标签+文本值）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“div”).html(“xxxx”);</td>
+<td><strong>设置</strong>div里面所有内容（html标签+文本值）</td>
+</tr>
+</tbody></table>
+<p><img src="/image/2.png" alt></p>
+<h2 id="样式函数"><a href="#样式函数" class="headerlink" title="样式函数"></a>样式函数</h2><p><img src="/image/3.png" alt></p>
+<table>
+<thead>
+<tr>
+<th align="center">$(“p”).addClass(“fan”);</th>
+<th>为元素添加类样式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“p”).removeClass(“fan”);</td>
+<td>为元素移除类样式</td>
+</tr>
+<tr>
+<td align="center">$(“p”).<strong>toggleClass</strong>(“fan”);</td>
+<td>切换样式（有-&gt;无、无-&gt;有）</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">$(“p”).css(“css属性”)</th>
+<th><strong>获得</strong>p元素的css属性的值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“p”).css(“属性”,”值”)</td>
+<td><strong>设置</strong>p元素的css属性的值</td>
+</tr>
+<tr>
+<td align="center">$(“p”).css({json})</td>
+<td><strong>设置</strong>p元素多个css属性的值</td>
+</tr>
+<tr>
+<td align="center">$(“p”).css({“width”:”150px”,”font-weight”:”bold”,”color”:”red”});</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="center">$(“div”).width()</th>
+<th><strong>获得</strong>元素的宽度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“div”).height()</td>
+<td><strong>获得</strong>元素的高度</td>
+</tr>
+<tr>
+<td align="center">$(“div”).width(值)</td>
+<td><strong>设置</strong>元素的宽度</td>
+</tr>
+<tr>
+<td align="center">$(“div”).height(值)</td>
+<td><strong>设置</strong>元素的高度</td>
+</tr>
+</tbody></table>
+<p>div元素的宽度</p>
+<table>
+<thead>
+<tr>
+<th align="center">$(“div”).innerWidth()</th>
+<th>包含内边距</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">$(“div”).outerWidth()</td>
+<td>包含内边距+边框</td>
+</tr>
+<tr>
+<td align="center">$(“div”).outerWidth(true)</td>
+<td>包含内边距+边框+外边距</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr/>
@@ -602,11 +852,11 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/09/29/hello-world/">
-                    《Hello World》
+            <a  href="/2019/10/08/2019-09-02-jquery/">
+                    《jQuery选择器》
             </a> by
             <a href="http://yoursite.com">
-                John Doe
+                yangxin
             </a> is licensed under a
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
                 Creative Commons Attribution 4.0 International License
@@ -648,21 +898,29 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2019/10/08/2019-08-14-first/">
+                <a href="/2019/10/08/2019-09-02-事件与DOM/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="第一天啦">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="事件与DOM">
                         
-                        <span class="card-title">第一天啦</span>
+                        <span class="card-title">事件与DOM</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Linux系统我叫杨鑫
-很荣幸今天能够进入到兄弟会，
-装了一下午的Linux系统，心态爆炸！！！！不过幸运的是没有放弃，最后终于成功了,在这个过程中同时也学到了很多东西，是之前没有接触到的，有喜有忧，担心还有自己不会的太多了帕跟不上进度，所
+                            事件！！事件的绑定与解除绑定：$(“选择器”).bind( “事件类型”，function(){} );解除：$(“选择器”).unbind( “事件类型” );  
+常用的事件
+
+
+代码
+解释
+
+
+
+click(fn)/click()
+单
                         
                     </div>
                     <div class="publish-info">
@@ -684,37 +942,37 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fas fa-chevron-right"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/09/29/hello-world/">
+                <a href="/2019/10/08/2019-09-02-19/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="第十九天">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">第十九天</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            第十九天啦
+很充实的一天今天买了个服务器，然后把前两天写的聊天系统推进了我的服务器，其实，我一直想有一个自己的服务器，想存一些自己的小东西，今天终于把他弄明白了，很开心。我的聊天系统的地址是  39.105.46.187:2000  可以一
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-09-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            yangxin
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
