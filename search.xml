@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>关于Tomcat乱码</title>
+      <link href="/2019/10/14/2019-10-14-tomcat%E4%B9%B1%E7%A0%81/"/>
+      <url>/2019/10/14/2019-10-14-tomcat%E4%B9%B1%E7%A0%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于Tomcat在Idea中文乱码问题"><a href="#关于Tomcat在Idea中文乱码问题" class="headerlink" title="关于Tomcat在Idea中文乱码问题"></a>关于Tomcat在Idea中文乱码问题</h1><hr><p><strong>问题，在idea中出现乱码问题，以前没有的，好像在设置系统代码为utf8之后就出现了，于是尝试了一系列办法，希望这些办法对大家有帮助。先看一下乱码的样式。</strong></p><p><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124093506839-714069128.png" alt> </p><h4 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h4><ol><li>在tomcat Server中设置 VM options , 值为 -Dfile.encoding=UTF-8 ，可惜没生效<br><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124093658943-1191924990.png" alt> </li><li>在setting中的 File encodings 中设置编码格式，后来发现这是设置页面编码格式的，所以也没生效，不过遇到相关问题的朋友也不防照此设置下。<br><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124094119079-1885159073.png" alt> </li><li>在java Complier中设置Additional command line parameters的值，-encoding=UTF-8，很可惜还没生效<br><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124094405855-2002294699.png" alt> </li><li>在bin中设置idea.exe.vmoptions和idea64.exe.vmoptions中的参数，同时增加-Dfile.encoding=UTF-8，据说有些人保存后重启就可以了，但到我这边还是没生效。<br><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124094613937-68757272.png" alt> </li><li>在tomcat \bin目录下的catalina.bat文件中加入 -Dfile.encoding=UTF-8，可是还不生效，有些抓狂了…<br><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124094827745-504540766.png" alt> </li><li>在 tomcat / conf 目录下，设置 logging.properties ，增加参数  java.util.logging.ConsoleHandler.encoding = GBK，重启后终于可以了，总算松了口气。<br><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124094951059-25415614.png" alt>  <h3 id="终于，正常显示了……"><a href="#终于，正常显示了……" class="headerlink" title="终于，正常显示了……"></a>终于，正常显示了……</h3><img src="https://img2018.cnblogs.com/blog/717943/201901/717943-20190124095057327-1632560035.png" alt></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Tomcat </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tomcat </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于MongoDB下载速度慢</title>
       <link href="/2019/10/12/2019-10-12-mongodb/"/>
       <url>/2019/10/12/2019-10-12-mongodb/</url>
