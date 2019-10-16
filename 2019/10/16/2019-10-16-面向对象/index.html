@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Oracle,Mysql,Redis,MongoDB优势特点, Yangxin">
-    <meta name="description" content="
-关系型数据库oracle–mysql
-一、mysql与Oracle的相同点：1、都是关系型数据库管理系统(MySQL开放源码)
-2、都是目前很流行的数据库（Oracle以分布式为核心）；
-二、MySQL、Oracle各自特点：1、Orac">
+    <meta name="keywords" content="面向对象三大特性, Yangxin">
+    <meta name="description" content="封装: 就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里 
+实现流程1. 私有化成员变量用private修饰
+2. 公有set与get方法，在set">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Oracle,Mysql,Redis,MongoDB优势特点 | Yangxin</title>
+    <title>面向对象三大特性 | Yangxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -288,13 +286,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Oracle,Mysql,Redis,MongoDB优势特点
+                        面向对象三大特性
                     </div>
                 </div>
             </div>
@@ -406,8 +404,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/数据库/">
-                                <span class="chip bg-color">数据库</span>
+                            <a href="/tags/面向对象/">
+                                <span class="chip bg-color">面向对象</span>
                             </a>
                         
                     </div>
@@ -418,8 +416,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/数据库/" class="post-category">
-                                数据库
+                            <a href="/categories/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -430,7 +428,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-10-15
+                    2019-10-16
                 </div>
 
                 
@@ -446,51 +444,48 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<h1 id="关系型数据库oracle–mysql"><a href="#关系型数据库oracle–mysql" class="headerlink" title="关系型数据库oracle–mysql"></a>关系型数据库oracle–mysql</h1></blockquote>
-<h3 id="一、mysql与Oracle的相同点："><a href="#一、mysql与Oracle的相同点：" class="headerlink" title="一、mysql与Oracle的相同点："></a>一、mysql与Oracle的相同点：</h3><p>1、都是关系型数据库管理系统(MySQL开放源码)</p>
-<p>2、都是目前很流行的数据库（Oracle以分布式为核心）；</p>
-<h3 id="二、MySQL、Oracle各自特点："><a href="#二、MySQL、Oracle各自特点：" class="headerlink" title="二、MySQL、Oracle各自特点："></a>二、MySQL、Oracle各自特点：</h3><p>1、Oracle自身特点：</p>
-<p>（1）、完整的数据管理功能：</p>
-<p>1）、数据的大量性；</p>
-<p>2）、数据的保存的持久性；</p>
-<p>3）、数据的共享性；</p>
-<p>4）、数据的可靠性；</p>
-<p>2.MySQL自身特点：<br>       MySQL因为其速度、可靠性和适应性而备受关注。大多数人<br>       都认为在不需要事务化处理的情况下，MySQL是管理内容最好的选择。</p>
-<blockquote>
-<h2 id="三、两者数据库不同点："><a href="#三、两者数据库不同点：" class="headerlink" title="三、两者数据库不同点："></a>三、两者数据库不同点：</h2></blockquote>
-<p>1.单引号的处理 Mysql里可以用双引号包起字符串，Oracle里只可以用单引号包起字符串。在插入和修改字符串前必须做单引号的替换：把所有出现的一个单引号替换成两个单引号。</p>
-<p>2.自动增长的数据类型处理 Mysql是一个自动增长的数据类型，插入数据的时候，不需要管理，它自己会自动增长，Oracle不支持自动增长的数据类型，通过建立一个自动增长的序列号来完成自动增长。</p>
-<p>3.sql语句的扩展和灵活性 Mysql对sql语句有很多非常实用而方便的扩展，比如limit功能，insert可以一次插入多行数据，select某些管理数据可以不加from。 Oracle在这方面感觉更加稳重传统一些。</p>
-<p>4.事物提交方式 oracle默认不自动提交，需要用户手动提交。 Mysql默认是自动提交。不支持事物。 Mysql默认自动提交，也就是你提交一个query，它就直接执行，我们可以通过</p>
-<p>set autocommit=0 禁止自动提交<br>set autocommit=1 开启自动提交</p>
-<p>5.Oracle是大型数据库而Mysql是中小型数据库，Oracle市场占有率达40%，Mysql只有20%左右，同时Mysql是开源的而Oracle价格非常高。</p>
-<p>6.Oracle支持大并发，大访问量，是OLTP(On-Line Transaction Processing联机事务处理系统)最好的工具。</p>
-<p>7.安装所用的空间差别也是很大的，Mysql安装完后才152M而Oracle有3G左右，且使用的时候Oracle占用特别大的内存空间和其他机器性能。</p>
-<p>8.长字符串的处理 长字符串的处理ORACLE也有它特殊的地方。INSERT和UPDATE时最大可操作的字符串长度小于等于4000个单字节, 如果要插入更长的字符串, 请考虑字段用CLOB类型，方法借用ORACLE里自带的DBMS_LOB程序包。插入修改记录前一定要做进行非空和长度判断，不能为空的字段值和超出长度字段值都应该提出警告,返回上次操作。</p>
-<p>9.空字符的处理 Mysql的非空字段也有空的内容，ORACLE里定义了非空字段就不容许有空的内容。按Mysql的NOT NULL来定义Oracle表结构, 导数据的时候会产生错误。因此导数据时要对空字符进行判断，如果为NULL或空字符，需要把它改成一个空格的字符串。</p>
-<p>10.字符串的模糊比较 Mysql里用 字段名 like ‘%字符串%’;<br>Oracle里也可以用 字段名 like ‘%字符串%’ 但这种方法不能使用索引, 速度不快。</p>
-<p>11.翻页的SQL语句的处理<br>MySQL处理翻页的SQL语句比较简单，用LIMIT开始位置，记录个数；PHP里还可以用 SEEK定位到结果集的位置。Oracle处理翻页的SQL语句就比较繁琐了。每个结果集只有一个ROWNUM字段标明它的位置，并且只能用ROWNUM&lt;100，不能用ROWNUM&gt;80。</p>
-<blockquote>
-<h1 id="菲关系型数据库redis–mongo"><a href="#菲关系型数据库redis–mongo" class="headerlink" title="菲关系型数据库redis–mongo"></a>菲关系型数据库redis–mongo</h1></blockquote>
-<h2 id="1-Redis-是完全开源免费的，遵守BSD协议，是一个高性能的key-value数据库。分布式文件存储数据库，多用于集群介于关系型与非关系型之间，用c-编写，为web提供可扩展的高性能存储方案。多作为缓存使用"><a href="#1-Redis-是完全开源免费的，遵守BSD协议，是一个高性能的key-value数据库。分布式文件存储数据库，多用于集群介于关系型与非关系型之间，用c-编写，为web提供可扩展的高性能存储方案。多作为缓存使用" class="headerlink" title="1.Redis 是完全开源免费的，遵守BSD协议，是一个高性能的key-value数据库。分布式文件存储数据库，多用于集群介于关系型与非关系型之间，用c++编写，为web提供可扩展的高性能存储方案。多作为缓存使用"></a>1.Redis 是完全开源免费的，遵守BSD协议，是一个高性能的key-value数据库。分布式文件存储数据库，多用于集群介于关系型与非关系型之间，用c++编写，为web提供可扩展的高性能存储方案。多作为缓存使用</h2><p>Redis 与其他 key - value 缓存产品有以下三个特点：</p>
-<p>1.Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。</p>
-<p>2.Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，string，zset，hash等数据结构的存储。</p>
-<p>3.Redis支持数据的备份，即master-slave模式的数据备份。</p>
-<h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><p>1.如果内存增长过快，需要定期删除数据。<br>2.如果进行完整重同步，由于需要生成rdb文件，并进行传输，会占用主机的CPU，并会消耗现网的带宽。不过redis2.8版本，已经有部分重同步的功能，但是还是有可能有完整重同步的。比如，新上线的备机。<br>3.修改配置文件，进行重启，将硬盘中的数据加载进内存，时间比较久。在这个过程中，redis不能提供服务。</p>
-<h2 id="2-mongodb"><a href="#2-mongodb" class="headerlink" title="2.mongodb"></a>2.mongodb</h2><p>MongoDB 是由C++语言编写的，是一个基于分布式文件存储的开源数据库系统。查询与索引方式灵活，是最像SQL的Nosql。支持复制集、主备、互为主备、自动分片等特性</p>
-<p>在高负载的情况下，添加更多的节点，可以保证服务器性能。</p>
-<p>MongoDB 旨在为WEB应用提供可扩展的高性能数据存储解决方案。</p>
-<p>MongoDB 将数据存储为一个文档，数据结构由键值(key=&gt;value)对组成。</p>
-<h3 id="与关系型比较"><a href="#与关系型比较" class="headerlink" title="与关系型比较"></a>与关系型比较</h3><p>1.mongodb不支持事务操作。<br>2.mongodb占用空间过大。<br>3.MongoDB没有如MySQL那样成熟的维护工具，这对于开发和IT运营都是个值得注意的地方。</p>
-<blockquote>
-<h2 id="Mongodb与redis相比较："><a href="#Mongodb与redis相比较：" class="headerlink" title="Mongodb与redis相比较："></a>Mongodb与redis相比较：</h2><p>mongoDB 源码语言是C++,redis也是C或C++,</p>
-</blockquote>
-<p>mongodb 文件存储是BSON格式类似JSON，或自定义的二进制格式。</p>
-<p>mongodb与redis性能都很依赖内存的大小，mongodb 有丰富的数据表达、索引；最类似于关系数据库，支持丰富的查询语言，redis数据丰富，较少的IO ，这方面mongodb优势明显。</p>
-<p>mongodb不支持事物，靠客户端自身保证，redis支持事物，比较弱，仅能保证事物中的操作按顺序执行，这方面 redis优于mongodb。</p>
-<p>mongodb对海量数据的访问效率提升，redis 较小数据量的性能及运算,这方面 mongodb性能优于redis .monbgodb 有mapredurce功能，提供数据分析，redis 没有 ，这方面 mongodb优于redis 。</p>
-
+                <h1 id="封装"><a href="#封装" class="headerlink" title="封装:"></a>封装:</h1><p> <strong>就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里</strong> </p>
+<h2 id="实现流程"><a href="#实现流程" class="headerlink" title="实现流程"></a>实现流程</h2><pre><code>1. 私有化成员变量用private修饰
+2. 公有set与get方法，在set里进行合理值判断
+3. 创建无参和有参构造，在有参里进行set的判断</code></pre><p><strong><em>static修饰时变成类层级，用类名.调用</em></strong> </p>
+<h1 id="继承-extends"><a href="#继承-extends" class="headerlink" title="继承 (extends):"></a>继承 (extends):</h1><p><strong>多个类有相同的部分，将同样的部分放到父类，子类都包含自己独有的方法，然后继承父类的相同的方法，实现代码通用编程。子类需要重写父类的方法@override注释然后super.show()调用。重写原则：1.方法名一样，参数列表及返回值相同2.访问权限不能变小可同级或变大3.子类重写方法不可抛出更大异常</strong>  </p>
+<ol>
+<li>子类可以继承私有成员变量，不可继承父类构造方法与私有成员方法</li>
+<li>支持单继承</li>
+<li>继承满足：子类is a父类</li>
+<li>构造子类对象都会调用父类构造来将方法初始化</li>
+</ol>
+<h3 id="访问控制符"><a href="#访问控制符" class="headerlink" title="访问控制符 :"></a>访问控制符 :</h3><pre><code>public:可在任意处使用，无论自己包或别的包
+protected：只可以在本类中使用，其他的包不可以
+deafalt： 只在本类的内部和本包中的类
+private：仅在本类的内部使用 </code></pre><h1 id="多态"><a href="#多态" class="headerlink" title="多态 :"></a>多态 :</h1><p><strong>有继承，重写，父类引用指向子类对象,意义：屏蔽不同子类的差异实现通用的编程</strong><br>当父类的引用指向子类的对象时，可直接调用父类方法，若想调用子类对象需强转。例：</p>
+<pre><code>Person p = new Worker();
+//调worker内的独有方法salary,强转。
+((worker)p).salary(); </code></pre><p>强转判断： </p>
+<pre><code>//此处person不转，worker需强转；
+if(p instanceof person){
+  syso..(&quot;不用转&quot;)
+}syso..(&quot;需要强转&quot;) </code></pre><hr>
+<h2 id="多态的三种实现"><a href="#多态的三种实现" class="headerlink" title="多态的三种实现"></a>多态的三种实现</h2><pre><code>//父类指向子类
+1.Person p = new Worker（）;
+2.//写个静态方法将父类当形参放入，用类名.此静态方法名（new 子类对象来调用） </code></pre><hr>
+<pre><code>public class R{
+    public static void father(Person p){
+      //调用子类的show方法
+       p.show();
+    }
+  public static void main(String[] args){
+      R.father(new Worker(20,&quot;kk&quot;,1234));
+  }
+}</code></pre><p><strong>3.接口的实现方法：因为接口比抽象类更抽象，不能new对象，因此不能用2方法中那样的形式new个对象，那么我们就需要定义一个类来实现这个接口，用类名.调用的时候TestA.test(new shixianA());比如两个接口类叫metal和gold，然后写monet类实现它两个，会重写他两，之后在测试类里，</strong>  </p>
+<pre><code>//有点像定义一个父类实现多个子类的形式；
+Money  m = new Metal();
+Money  m = new Gold()  </code></pre><hr>
+<h1 id="final"><a href="#final" class="headerlink" title="final :"></a>final :</h1><pre><code>修饰类：不能被继承，防止滥用string，stystem
+修饰成员方法：不可被重写
+修饰成员变量：必须赋初值变常量
+开发很少用static或final单用
+一般public static final double=3.11；</code></pre>
             </div>
             <hr/>
 
@@ -650,8 +645,8 @@
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/15/2019-10-15-数据库/">
-                    《Oracle,Mysql,Redis,MongoDB优势特点》
+            <a  href="/2019/10/16/2019-10-16-面向对象/">
+                    《面向对象三大特性》
             </a> 由
             <a href="http://yoursite.com">
                 yangxin
@@ -692,9 +687,62 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fas fa-chevron-left"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/10/16/2019-10-16-面向对象/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="面向对象三大特性">
+                        
+                        <span class="card-title">面向对象三大特性</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            封装: 就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里 
+实现流程1. 私有化成员变量用private修饰
+2. 公有set与get方法，在set
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/面向对象/">
+                        <span class="chip bg-color">面向对象</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/10/15/2019-10-15-shujuku/">
                     <div class="card-image">
@@ -714,9 +762,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-10-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -734,58 +782,6 @@
                     
                     <a href="/tags/数据库/">
                         <span class="chip bg-color">数据库</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/14/2019-10-14-域名/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="博客用域名访问">
-                        
-                        <span class="card-title">博客用域名访问</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            关于如何用域名访问自己的博客
-
-购买域名自行选择阿里，百度云等，不同类型的域名有不同的费用，自行购买即可。我之前买的是百度云的.top 域名，很便宜，一年才9块钱好像。购买完以后开始域名解析，在管理控制台中。 
-我们需要建立两个域名解析条例
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/服务器/" class="post-category">
-                                    服务器
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/域名/">
-                        <span class="chip bg-color">域名</span>
                     </a>
                     
                 </div>
