@@ -4,12 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Java设计模式之单例设计模式, Yangxin">
-    <meta name="description" content="Java设计模式之单例模式
-起步java中单例模式是一种常见的设计模式，单例模式的写法有好几种，这里主要介绍两种：懒汉式单例、饿汉式单例。 
-
-特点
-1、单例类只能有一个实例。 2、单例类必须自己创建自己的唯一实例。 3、单例类必须给所有其">
+    <meta name="keywords" content="List集合, Yangxin">
+    <meta name="description" content="List集合list集合是我们collection集合的一个子集合；元素有先后放入顺序且可重复，主要实现类有ArraryList,LinkList,Static,Vector
+ArraryList底层是数组，访问元素方便，增删不便；Link">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Java设计模式之单例设计模式 | Yangxin</title>
+    <title>List集合 | Yangxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -288,13 +285,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Java设计模式之单例设计模式
+                        List集合
                     </div>
                 </div>
             </div>
@@ -406,8 +403,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/单例设计模式/">
-                                <span class="chip bg-color">单例设计模式</span>
+                            <a href="/tags/List/">
+                                <span class="chip bg-color">List</span>
                             </a>
                         
                     </div>
@@ -446,40 +443,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java设计模式之单例模式"><a href="#Java设计模式之单例模式" class="headerlink" title="Java设计模式之单例模式"></a>Java设计模式之单例模式</h1><blockquote>
-<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><pre><code>java中单例模式是一种常见的设计模式，单例模式的写法有好几种，这里主要介绍两种：懒汉式单例、饿汉式单例。 </code></pre></blockquote>
-<blockquote>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2></blockquote>
-<p><strong>1、单例类只能有一个实例。 2、单例类必须自己创建自己的唯一实例。 3、单例类必须给所有其他对象提供这一实例单例模式确保某个类只有一个实例，而且自行实例化并向整个系统提供这个实例。在计算机系统中，线程池、缓存、日志对象、对话框、打印机、显卡的驱动程序对象常被设计成单例。这些应用都或多或少具有资源管理器的功能。每台计算机可以有若干个打印机，但只能有一个Printer Spooler，以避免两个打印作业同时输出到打印机中。每台计算机可以有若干通信端口，系统应当集中管理这些通信端口，以避免一个通信端口同时被两个请求同时调用。总之，选择单例模式就是为了避免不一致状态，避免政出多头。</strong> </p>
-<blockquote>
-<h2 id="一、懒汉式单例"><a href="#一、懒汉式单例" class="headerlink" title="一、懒汉式单例"></a>一、懒汉式单例</h2></blockquote>
-<pre><code>//懒汉式单例类.在第一次调用的时候实例化自己 
-public class Singleton {
-   private Singleton() {}
-   private static Singleton single=null;
-   //静态工厂方法 
-   public static Singleton getInstance() {
-        if (single == null) {  
-             single = new Singleton();
-         }  
-       return single;
-    }
-}  </code></pre><blockquote>
-<h2 id="二、饿汉式单例"><a href="#二、饿汉式单例" class="headerlink" title="二、饿汉式单例"></a>二、饿汉式单例</h2></blockquote>
-<pre><code>//饿汉式单例类.在类初始化时，已经自行实例化 
-public class Singleton1 {
-    private Singleton1() {
-    }
-    private static final Singleton1 single = new Singleton1();
-    //静态工厂方法 
-   public static Singleton1 getInstance() {
-        return single;
-    }
-} </code></pre><blockquote>
-<h2 id="1、线程安全："><a href="#1、线程安全：" class="headerlink" title="1、线程安全："></a>1、线程安全：</h2><pre><code>饿汉式天生就是线程安全的，可以直接用于多线程而不会出现问题，</code></pre></blockquote>
-<pre><code>懒汉式本身是非线程安全的，为了实现线程安全有几种写法，分别是上面的1、2、3，这三种实现在资源加载和性能方面有些区别。</code></pre><blockquote>
-<h2 id="2、资源加载和性能："><a href="#2、资源加载和性能：" class="headerlink" title="2、资源加载和性能："></a>2、资源加载和性能：</h2><pre><code>饿汉式在类创建的同时就实例化一个静态对象出来，不管之后会不会使用这个单例，都会占据一定的内存，但是相应的，在第一次调用时速度也会更快，因为其资源已经初始化完成，</code></pre></blockquote>
-<pre><code>而懒汉式顾名思义，会延迟加载，在第一次使用该单例的时候才会实例化对象出来，第一次调用时要做初始化，如果要做的工作比较多，性能上会有些延迟，之后就和饿汉式一样了。</code></pre>
+                <h1 id="List集合"><a href="#List集合" class="headerlink" title="List集合"></a>List集合</h1><h4 id="list集合是我们collection集合的一个子集合；元素有先后放入顺序且可重复，主要实现类有ArraryList-LinkList-Static-Vector"><a href="#list集合是我们collection集合的一个子集合；元素有先后放入顺序且可重复，主要实现类有ArraryList-LinkList-Static-Vector" class="headerlink" title="list集合是我们collection集合的一个子集合；元素有先后放入顺序且可重复，主要实现类有ArraryList,LinkList,Static,Vector"></a>list集合是我们collection集合的一个子集合；元素有先后放入顺序且可重复，主要实现类有ArraryList,LinkList,Static,Vector</h4><blockquote>
+<p><strong>ArraryList底层是数组，访问元素方便，增删不便；</strong><br><strong>LinkList底层链表管理，访问不便，增删方便；</strong><br><strong>Strack底层数组管理，具有先进先出的特性，为栈；</strong><br><strong>Vectory底层数组管理，与ArraryList比属于线程安全类</strong> </p>
+</blockquote>
+<h2 id="List常用方法："><a href="#List常用方法：" class="headerlink" title="List常用方法："></a>List常用方法：</h2><blockquote>
+<p>增加的方法： void add (int index，E str) –将str加入到index位置<br>删除：E remove(int index) —删除指定位置元素；E代表被删除的对象的类型，以此做返回值<br>修改：E set (int index ,E ele) –像index位置插入ele的str<br>查找：int indexOf() –查元素<br>E get (int index) –获取index位置的元素，返回类型时获取到的类型； </p>
+</blockquote>
+<h2 id="List集合的增，删，改代码："><a href="#List集合的增，删，改代码：" class="headerlink" title="List集合的增，删，改代码："></a>List集合的增，删，改代码：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line">import java.util.LinkedList;</span><br><span class="line">import java.util.List;</span><br><span class="line"></span><br><span class="line">public class ListTest &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		</span><br><span class="line">		// 1.声明List类型的引用指向实现类的对象</span><br><span class="line">		List lt1 = new LinkedList();</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + lt1); // [啥也没有]</span><br><span class="line">		// 2.向集合中添加元素并打印</span><br><span class="line">		// 向下标为0的位置插入元素one  向开头位置插入元素</span><br><span class="line">		lt1.add(0, &quot;one&quot;);</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + lt1); // [one]</span><br><span class="line">		// 向下标为1的位置插入元素3   向末尾位置插入元素</span><br><span class="line">		lt1.add(1, 3);</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + lt1); // [one, 3]</span><br><span class="line">		// 向下标为1的位置插入元素&quot;two&quot;，向中间位置插入元素</span><br><span class="line">		lt1.add(1, &quot;two&quot;);</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + lt1); // [one, two, 3]</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;--------------------------------------&quot;);</span><br><span class="line">		// 3.实现集合中元素的查找</span><br><span class="line">		// 集合中之所以可以放入不同类型的对象，是因为这些对象都被看做Object</span><br><span class="line">		// 类型放入的，那么取出来的元素类型也是Object类型</span><br><span class="line">		String str1 = (String) lt1.get(0);</span><br><span class="line">		System.out.println(&quot;获取到的元素是：&quot; + str1); // one</span><br><span class="line">		Integer it1 = (Integer) lt1.get(2);</span><br><span class="line">		System.out.println(&quot;获取到的元素是：&quot; + it1); // 3</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;--------------------------------------&quot;);</span><br><span class="line">		// 练习：使用get方法获取元素并拼接成toString方法的效果</span><br><span class="line">		StringBuilder sb2 = new StringBuilder();</span><br><span class="line">		sb2.append(&quot;[&quot;);</span><br><span class="line">		for(int i = 0; i &lt; lt1.size(); i++) &#123;</span><br><span class="line">			if(lt1.size()-1 == i) &#123;</span><br><span class="line">				sb2.append(lt1.get(i)).append(&quot;]&quot;);</span><br><span class="line">			&#125; else &#123;</span><br><span class="line">				// 将第一个字符串中的每个字符取出放入第二个字符串并跟随逗号</span><br><span class="line">				sb2.append(lt1.get(i)).append(&quot;,&quot;).append(&quot; &quot;);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + sb2);</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;--------------------------------------&quot;);</span><br><span class="line">		// 4.实现集合中元素的修改功能</span><br><span class="line">		// [one, two, 3]</span><br><span class="line">		Integer it2 = (Integer) lt1.set(2, &quot;three&quot;);</span><br><span class="line">		System.out.println(&quot;下标为2的旧元素是：&quot; + it2); // 3</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + lt1); // [one, two, three]</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;--------------------------------------&quot;);</span><br><span class="line">		// 5.实现集合中元素的删除功能</span><br><span class="line">		String str2 = (String) lt1.remove(1);</span><br><span class="line">		System.out.println(&quot;被删除的元素是：&quot; + str2); // two</span><br><span class="line">		System.out.println(&quot;删除后集合中的元素有：&quot; + lt1); // [one, three]</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;--------------------------------------&quot;);</span><br><span class="line">		// 练习：使用remove方法删除集合中的所有元素</span><br><span class="line">		//for (int i = 0; i &lt; lt1.size(); /* i++ */) &#123;</span><br><span class="line">		/*</span><br><span class="line">		for (int i = lt1.size()-1; i &gt;= 0; i--) &#123;</span><br><span class="line">			System.out.println(&quot;被删除的元素是：&quot; + lt1.remove(i));</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(&quot;集合中最终的元素有：&quot; + lt1);</span><br><span class="line">		*/</span><br><span class="line">		</span><br><span class="line">		System.out.println(&quot;--------------------------------------&quot;);</span><br><span class="line">		// 6.获取List集合中的一部分内容，从下标0开始一直到下标1，但取不到1</span><br><span class="line">		List lt2 = lt1.subList(0, 1);</span><br><span class="line">		System.out.println(&quot;lt2 = &quot; + lt2); // [one]</span><br><span class="line">		lt2.set(0, 2);</span><br><span class="line">		System.out.println(&quot;lt2 = &quot; + lt2); // [2]</span><br><span class="line">		System.out.println(&quot;lt1 = &quot; + lt1); // [2, three]</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
             </div>
             <hr/>
 
@@ -639,8 +609,8 @@ public class Singleton1 {
                 </a>
             </div>
             <br/>
-            <a  href="/2019/10/16/2019-10-16-Java单例设计模式/">
-                    《Java设计模式之单例设计模式》
+            <a  href="/2019/10/16/2019-10-17-liST/">
+                    《List集合》
             </a> 由
             <a href="http://yoursite.com">
                 yangxin
@@ -685,24 +655,23 @@ public class Singleton1 {
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/16/2019-10-16-kali系统字典/">
+                <a href="/2019/10/16/2019-10-16-Java单例设计模式/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Kali系统默认字典">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Java设计模式之单例设计模式">
                         
-                        <span class="card-title">Kali系统默认字典</span>
+                        <span class="card-title">Java设计模式之单例设计模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-Kali WiFi渗透 系统默认字典
-kali默认字典目录： /usr/share/wordlists/ 可以用crunch自己选择生成适合自己的密码字典kali下的字典生成工具 — crunch
+                            Java设计模式之单例模式
+起步java中单例模式是一种常见的设计模式，单例模式的写法有好几种，这里主要介绍两种：懒汉式单例、饿汉式单例。 
 
-dirbbig.txt #大的字典
-s
+特点
+1、单例类只能有一个实例。 2、单例类必须自己创建自己的唯一实例。 3、单例类必须给所有其
                         
                     </div>
                     <div class="publish-info">
@@ -713,8 +682,8 @@ s
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Kali/" class="post-category">
-                                    Kali
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -724,8 +693,8 @@ s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Kali字典/">
-                        <span class="chip bg-color">Kali字典</span>
+                    <a href="/tags/单例设计模式/">
+                        <span class="chip bg-color">单例设计模式</span>
                     </a>
                     
                 </div>
@@ -739,20 +708,21 @@ s
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/16/2019-10-17-liST/">
+                <a href="/2019/10/16/2019-10-16-面向对象/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="List集合">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="面向对象三大特性">
                         
-                        <span class="card-title">List集合</span>
+                        <span class="card-title">面向对象三大特性</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            List集合list集合是我们collection集合的一个子集合；元素有先后放入顺序且可重复，主要实现类有ArraryList,LinkList,Static,Vector
-ArraryList底层是数组，访问元素方便，增删不便；Link
+                            封装: 就是将一些逻辑代码和实现的细节封到一个类里，隐藏细节，外部不能随便修改或调用，需要声明对象的引用来调用，可以提高代码的复用性.比如在测试类里 
+实现流程1. 私有化成员变量用private修饰
+2. 公有set与get方法，在set
                         
                     </div>
                     <div class="publish-info">
@@ -774,8 +744,8 @@ ArraryList底层是数组，访问元素方便，增删不便；Link
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/List/">
-                        <span class="chip bg-color">List</span>
+                    <a href="/tags/面向对象/">
+                        <span class="chip bg-color">面向对象</span>
                     </a>
                     
                 </div>
